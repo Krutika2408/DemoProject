@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Add this style or put it inside style.css -->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width:80%;
+            margin:40px auto;
+            border-collapse: collapse;
+        }
+
+        thead th{
+            background:#f2f2f2;
+            padding:12px 8px;
+            border:1px solid #ddd;
+            text-align:left;
+        }
+
+        tbody tr td{
+            padding:10px;
+            border:1px solid #ddd;
+        }
+
+        tbody tr:nth-child(even){
+            background:#fafafa;
+        }
+
+        tbody tr:hover{
+            background:#f5f5f5;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Brand</th>
+            <th>Image</th>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
